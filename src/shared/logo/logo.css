@@ -1,0 +1,6 @@
+.logo-container {
+    @apply flex items-center gap-4;
+    h2 {
+        @apply text-3xl font-bold;
+    }
+}

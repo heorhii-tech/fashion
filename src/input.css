@@ -1,0 +1,8 @@
+@import "./shared/styles/reset.css";
+@import "./shared/layout/layout.css";
+@import "./shared/layout/header/header.css";
+@import "./shared/logo/logo.css";
+@import "./shared/buttons/burger-menu/burger-button.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
