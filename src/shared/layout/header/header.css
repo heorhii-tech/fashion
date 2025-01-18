@@ -1,4 +1,4 @@
-/* .header{
+ .header{
     @apply flex items-center justify-between py-[16px] px-[24px]  ;
 }
 .header__nav{
@@ -25,11 +25,4 @@
 }
 .absolute-header{
     @apply absolute top-0 left-0 right-0 z-30;
-} */
-.burger-menu{
-    @apply absolute lg:relative lg:w-auto top-0 h-screen w-full left-0 lg:h-auto -translate-y-full lg:translate-y-0  flex flex-col lg:flex-row items-center justify-center ;
-    @apply -z-10 lg:z-0 bg-white transition-[transform] duration-200 ease-in delay-[50ms] bg-gray-500;
-}
-.show.burger-menu{
-    @apply translate-y-0 transition-[transform] duration-200 delay-0 ease-in;
-}
+} 

@@ -3,6 +3,12 @@
 @import "./shared/layout/header/header.css";
 @import "./shared/logo/logo.css";
 @import "./shared/buttons/burger-menu/burger-button.css";
+@import "./shared/buttons/common-buttons/common-buttons.css";
+@import "./components/pages/homepage.css";
+@import "./shared/styles/common.css";
+@import "./components//sliders/sliders.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

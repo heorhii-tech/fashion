@@ -1,0 +1,13 @@
+.brands-slider{
+    @apply bg-primary-yellow py-[40px] px-[24px] w-full;
+}
+.brands-slider__container{
+    @apply animate-[slideSmall_15s_linear_infinite]
+}
+@keyframes slideSmall {
+    from {transform: translateX(0);}
+    to {transform: translateX(calc(-50% - 2.5px));}
+}
+.brands-slider__image{
+    @apply mix-blend-multiply shrink-0 w-[60px] md:w-auto lg:w-[100px] xl:w-auto;
+}
