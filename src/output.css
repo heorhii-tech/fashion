@@ -269,12 +269,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.brands-slider__image{
-  width: 60px;
-  flex-shrink: 0;
-  mix-blend-mode: multiply;
-}
-
 @media (min-width: 768px){
   .brands-slider__image{
     width: auto;
@@ -291,6 +285,10 @@ h1, h2, h3, h4, h5, h6 {
   .brands-slider__image{
     width: auto;
   }
+}
+
+.brands-slider__image{
+  mix-blend-mode: multiply;
 }
 
 *, ::before, ::after{
