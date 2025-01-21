@@ -1,20 +1,21 @@
 import React from "react";
 import { BrandSliderProps } from "@/components/common/types";
+
 interface BrandsSliderProps {
-    config:BrandSliderProps
+  config: BrandSliderProps;
 }
 
-export const BrandsSlider = ( {config}:BrandsSliderProps) => {
-   const {brandImages} = config
-    return (
-        <div className="brands-slider">
-      <div className="brands-slider__container">
-        {brandImages.map((image) => (
-          <img className="brands-slider__image" src={image} alt="" />
-        ))}
-      
+export const BrandsSlider = ({ config }: BrandsSliderProps) => {
+  const { brandImages } = config;
 
+  return (
+    <div className="brands-slider">
+      <div className="brands-slider__container">
+        {/* Дублируем список изображений для бесшовного эффекта */}
+        {[...brandImages, ...brandImages].map((image, index) => (
+          <img key={index} className="brands-slider__image" src={image} alt="" />
+        ))}
       </div>
-        </div>
-    );
+    </div>
+  );
 };

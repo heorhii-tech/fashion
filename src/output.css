@@ -247,6 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .brands-slider{
   width: 100%;
+  overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(235 217 107 / var(--tw-bg-opacity, 1));
   padding-top: 40px;
@@ -256,16 +257,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brands-slider__container{
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 1rem;
   animation: slideSmall 15s linear infinite;
 }
 
 @keyframes slideSmall {
-  from {
+  0% {
     transform: translateX(0);
   }
 
-  to {
-    transform: translateX(calc(-50% - 2.5px));
+  100% {
+    transform: translateX(-50%);
   }
 }
 
@@ -285,10 +290,6 @@ h1, h2, h3, h4, h5, h6 {
   .brands-slider__image{
     width: auto;
   }
-}
-
-.brands-slider__image{
-  mix-blend-mode: multiply;
 }
 
 *, ::before, ::after{

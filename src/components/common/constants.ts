@@ -9,5 +9,5 @@ export const SECTION_HEADER_CONFIG:SectionHeaderConfig = {
 }
 
 export const BrandsSliderConfig = {
-    brandImages:[brandImage1]
+    brandImages:[brandImage1,brandImage1,brandImage1,brandImage1,brandImage1,brandImage1]
 }
