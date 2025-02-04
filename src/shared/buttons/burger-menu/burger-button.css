@@ -1,0 +1,14 @@
+.bars {
+    @apply w-[45px] h-[45px] bg-primary-yellow cursor-pointer rounded-[5px];
+    .line {
+        stroke-width: 10;
+        stroke-linecap: square;
+        transition: stroke-dasharray 400ms,  stroke-dashoffset 400ms;
+        &.top, &.bottom {stroke-dasharray: 40 172;}
+        &.middle {stroke-dasharray: 40 111;}
+    }
+    &.active{
+        .top, .bottom {stroke-dashoffset: -132px;}
+        .middle {stroke-dashoffset: -71px;}
+    }
+}

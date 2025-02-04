@@ -1,3 +1,26 @@
 .primary-button {
-@apply px-[24px] py-[12px] bg-black rounded-[8px] text-white text-[16px] font-bold;
+    @apply px-[24px] py-[12px] bg-black rounded-[8px] text-white text-[16px] font-bold transition-all duration-300 ease-in-out relative overflow-hidden;
+}
+
+.primary-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый фон */
+    transform: scaleX(0); /* Начальное состояние: невидим */
+    transform-origin: left; /* Анимация начнется слева */
+    transition: transform 0.5s ease-in-out; /* Плавное появление */
+    z-index: 1;
+}
+
+.primary-button:hover::before {
+    transform: scaleX(1); /* Появление "подсветки" слева направо */
+}
+
+.primary-button:hover {
+    @apply text-primary-yellow; /* Изменение цвета текста */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Белая тень */
 }

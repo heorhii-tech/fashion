@@ -1,25 +1,31 @@
-import React from "react";
-import { HeaderProps } from "./types";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useLayout } from "../hooks/index";
 import BurgerMenu from "./BurgerMenu";
 import Logo from "../../logo/Logo";
 import { useHeader } from "../hooks/useHeader";
 import BurgerButton from "@/shared/buttons/burger-menu/BurgerButton";
-import clsx from "clsx";
+import { HeaderMenuItem } from "./types";
 
-const Header: React.FC<HeaderProps> = ({ menuItems }) => {
-  const { isMobile } = useLayout();
-  const { isMenuOpen, showBurgerMenu } = useHeader();
+export interface HeaderProps {
+  menuItems: HeaderMenuItem[];
+  isTablet?: boolean;
+  mediaQueries: { isMobile: boolean; isTablet: boolean };
+}
+
+const Header: React.FC<HeaderProps> = ({ menuItems, mediaQueries }) => {
+  const { isMenuOpen, showBurgerMenu, } = useHeader();
+  const { isTablet } = mediaQueries;
 
   return (
-    <>
-      <div className={`header ${isMenuOpen ? "absolute-header" : ""}`}>
-        <div className="header__nav">
+    <div className="container-header">
+      <div
+        className={`header`}
+      >
+        <div className="header__nav menu">
           <Link to="/" className="header__logo">
-            <Logo />
+            <Logo typeWhite={false} />
           </Link>
-          {!isMobile ? (
+          {!isTablet ? (
             <div className="header__menu">
               <ul className="header__menu-list">
                 {menuItems.map((item) => (
@@ -37,9 +43,13 @@ const Header: React.FC<HeaderProps> = ({ menuItems }) => {
         </div>
       </div>
       {isMenuOpen && (
-        <BurgerMenu menuItems={menuItems} onClose={showBurgerMenu} isOpen={isMenuOpen} />
+        <BurgerMenu
+          menuItems={menuItems}
+          onClose={showBurgerMenu}
+          isOpen={isMenuOpen}
+        />
       )}
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,203 @@
+.section-header {
+    @apply flex items-center h-[calc(100vh-68px)] justify-center;
+    @apply md:h-auto md:mt-[60px];
+  }
+  .section-header__wrapper {
+    @apply relative  flex flex-col gap-4 justify-between w-full bg-[#F4F6F5]  rounded-[24px] px-[24px] pt-[24px];
+    @apply md:pl-[5px] md:bg-[330%] lg:bg-[105%] xl:bg-[100%];
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .section-header__content {
+    @apply flex flex-col gap-4 justify-between max-w-[410px] rounded-[24px] px-[24px] py-[24px];
+    @apply md:pl-[30px] md:py-[36px] md:max-w-full;
+    
+  }
+  .section-header__star{
+    @apply w-[50px] absolute;
+  }
+  .section-header__star_top-left{
+    @apply md:block top-[8%] left-[50%] lg:left-[35%] text-[#E7E6E6] w-[56px] h-[51px] animate-spin-slow;
+  }
+  .section-header__star_top-center{
+    @apply md:block top-[50%] right-[40%] lg:right-[50%] lg:left-[40%] text-[#E7E6E6] w-[56px] h-[51px] animate-spin-slow;
+  }
+  .section-header__star_top-right{
+    @apply md:block top-[3%] lg:top-[10%] right-[5%] lg:right-[10%] text-[#E7E6E6] w-[56px] h-[51px] animate-spin-slow;
+  }
+  .section-header__title {
+    @apply flex flex-col;
+  }
+  .section-header__title-item {
+    @apply text-[55px] font-black px-[25px];
+    @apply md:max-w-[300px]
+  }
+  .block-rotate {
+    @apply rotate-[-2deg];
+  }
+  .section-header__subtitle {
+    @apply w-full;
+  }
+  .section-header__subtitle-text {
+    @apply text-[20px] xl:text-[22px] 2xl:text-[28px] tracking-tighter;
+  }
+  .section-header__button {
+    @apply  md:text-[20px] 2xl:text-[26px] tracking-tighter w-[80%] h-auto py-[7%] md:py-0 md:w-[180px] 2xl:w-[220px] md:h-[60px] 2xl:h-[80px];
+  }
+  
+
+
+
+  .section-new-arrivals {
+    @apply w-full mt-[80px];
+  }
+  .section-youngs-favourite {
+    @apply w-full mt-[70px];
+  }
+
+
+  .section-download-app {
+    @apply w-full mt-[70px] md:mt-[120px];
+  }
+  
+  .new-arrivals-cards {
+    @apply mt-[40px] flex flex-col justify-between gap-[40px] items-center;
+    @apply md:flex-row md:gap-[10px] lg:justify-center  lg:gap-[40px];
+  }
+  
+  
+  .payday {
+    @apply relative mb-[80px] mt-[80px] h-[500px] 2xl:h-[740px];
+  }
+  
+  .payday__wrapper {
+    @apply flex justify-center h-full bg-[-81px];
+    @apply xl:bg-[-20px];
+    @apply md:justify-end;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .payday__content {
+    @apply flex flex-col max-w-[445px] gap-[20px] justify-center items-center md:text-left basis-full md:basis-1/2;
+    @apply md:items-start md:pl-[40px] xl:max-w-full;
+  }
+  
+  .payday__star {
+    @apply hidden md:block w-[50px] h-[50px] xl:w-[62px] xl:h-[62px] absolute animate-spin-slow;
+  }
+  
+  .payday__star_top-left {
+    @apply top-[18%] left-[2%] lg:left-[7%] 2xl:left-[2%];
+  }
+  
+  .payday__star_top-center {
+    @apply top-[10%] left-[38%] 2xl:left-[40%];
+   
+  }
+  
+  .payday__star_bottom-left {
+    @apply top-[60%] left-[4%] lg:left-[9%] 2xl:left-[5%];
+  }
+  
+  .payday__star_bottom-center {
+    @apply top-[68%] left-[41%] 2xl:left-[42%];
+  }
+  
+  .payday__title {
+    @apply relative text-[50px] xl:text-[60px] 2xl:text-[90px] font-black leading-[1.2];
+  }
+  
+  .payday__title-decor {
+    @apply before:block before:absolute before:-left-5 before:-right-4 before:-top-2 before:bottom-0 before:-rotate-2 before:bg-white relative inline-block;
+  }
+  
+  .payday__title-text {
+    @apply relative;
+  }
+  
+  .payday__subtitle {
+    @apply block;
+  }
+  
+  .payday__description {
+    @apply text-center font-medium leading-tight text-[22px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] tracking-tighter;
+    @apply md:text-left xl:max-w-[475px];
+  }
+  
+  .payday__highlight {
+    @apply text-center font-bold leading-tight text-[22px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] tracking-tighter;
+  }
+  
+  .payday__postscriptum {
+    @apply text-center leading-tight text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] tracking-tighter;
+  }
+  
+  .payday__button {
+    @apply w-[190px] h-[60px] 2xl:w-[265px] 2xl:h-[95px] text-white bg-black rounded-[8px];
+  }
+  
+  .section-download-app__wrapper {
+    @apply md:flex;
+  }
+  .section-download-app__content{
+    @apply flex flex-col gap-[35px] justify-center items-center max-w-[370px] mx-auto;
+    @apply md:items-start xl:max-w-[510px] 2xl:max-w-[600px] xl:items-start;
+  }
+  .section-download-app__header {
+    @apply flex flex-col gap-[35px];
+  }
+  .section-download-app__header-title {
+    @apply font-black  text-[30px] lg:text-[34px] xl:text-[56px] 2xl:text-[64px] tracking-tighter leading-normal;
+    @apply text-center md:text-left lg:font-black;
+    
+  }
+  .section-download-app__header-description {
+    @apply text-center;
+    @apply md:text-left font-semibold md:text-[18px] xl:text-[28px] 2xl:text-[32px] tracking-tighter;
+    @apply lg:max-w-[475px] xl:max-w-[510px] 2xl:max-w-[600px] ;
+    
+  }
+
+  .section-download-app__links {
+    @apply flex gap-[12px];
+    @apply md:justify-start;
+  }
+  .section-download-app__link-image {
+    @apply max-w-[150px] xl:max-w-[220px] 2xl:max-w-[265px] ;
+  }
+  
+  .section-subscription {
+    @apply w-full mt-[70px] bg-primary-yellow px-[24px] py-[40px];
+    @apply 2xl:py-[80px]
+  }
+  .section-subscription__wrapper {
+    @apply flex flex-col gap-[35px] justify-center items-center;
+    
+  }
+  .section-subscription__header {
+    @apply flex flex-col gap-[35px];
+  }
+  
+  .section-subscription__header-title {
+    @apply text-center font-black text-[35px] lg:text-[40px] 2xl:text-[50px] text-white leading-tight tracking-tight;
+  }
+  .section-subscription__form {
+    @apply w-full md:w-[500px] lg:w-[575px] md:h-[60px] 2xl:h-[80px] bg-white flex flex-col md:flex-row items-center py-[5px] md:py-0 px-[5px] 2xl:px-[10px] rounded-[10px] text-[20px] 2xl:text-[22px] gap-[10px]
+  }
+  .section-subscription__header-description {
+    @apply text-center text-[20px] 2xl:text-[28px] text-white tracking-tight;
+  }
+  .section-subscription__form {
+    @apply w-full md:w-[500px] lg:w-[575px] md:h-[60px] 2xl:h-[80px] bg-white flex flex-col md:flex-row items-center py-[5px] md:py-0 px-[5px] 2xl:px-[10px] rounded-[10px] text-[20px] 2xl:text-[22px] gap-[10px];
+  }
+  .section-subscription__form-input {
+    @apply rounded-[8px] py-[12px] px-[24px]  w-full;
+  }
+  .section-subscription__footer {
+    @apply mt-[20px] w-full;
+  }
+  .section-subscription__footer-button {
+    @apply w-full md:w-[160px] h-[50px] 2xl:h-[60px];
+  }

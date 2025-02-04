@@ -7,8 +7,17 @@
 @import "./components/pages/homepage.css";
 @import "./shared/styles/common.css";
 @import "./components//sliders/sliders.css";
+@import "./components//titels/titels.css";
+@import "./components/cards//cards.css";
+@import "./components/sections/sections.css";
+@import "./shared/layout/footer/footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+    .clip-polygon {
+      clip-path: polygon(0 0, 100% 0, 100% 98.1%, 0 98.1%);
+    }
+  }

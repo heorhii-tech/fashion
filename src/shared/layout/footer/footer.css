@@ -1,0 +1,83 @@
+.section-footer{
+@apply w-full bg-black py-[60px] px-[24px];
+}
+.footer__wrapper{
+    @apply flex flex-col gap-[40px];
+    @apply lg:flex-row lg:justify-between;
+}
+
+.footer__subtitle{
+    @apply text-[#8e8e8e] text-center lg:text-left;
+    @apply lg:max-w-[300px] xl:max-w-[475px] lg:text-[20px] xl:text-[20px] 2xl:text-[24px];
+}
+.footer__brand{
+    @apply flex flex-col gap-[20px] items-center lg:items-start;
+}
+.footer__social-list{
+    @apply flex items-center gap-[10px];
+}
+.footer__social-item{
+    @apply max-w-[30px] xl:max-w-[58px] 2xl:max-w-[64px];
+}
+
+.footer__nav{
+    @apply flex flex-col gap-[10px];
+    @apply md:flex-row justify-between lg:gap-[35px];
+}
+.footer__nav-list{
+    @apply flex flex-col gap-[20px];
+}
+.footer__nav-title{
+    @apply text-white text-center text-[20px] leading-tight;
+    @apply  md:text-left;
+}
+.footer__nav-link{
+    @apply text-[#8e8e8e] text-center lg:text-left antialiased tracking-tight text-[20px] transition-colors duration-200 ease-in-out;
+    @apply hover:text-white;
+}
+
+.accordion-footer {
+    @apply w-full ;
+  }
+  
+  .accordion-footer__header {
+    @apply flex justify-between relative items-center cursor-pointer;
+  }
+  
+  .accordion-footer__title {
+    @apply text-[20px] text-white bg-black pr-[20px] relative z-10;
+  }
+  
+  .accordion-footer__line {
+    @apply h-[2px] bg-white absolute left-0 bottom-1/2 w-full;
+  }
+  
+  .accordion-footer__icon {
+    @apply w-[40px] h-[40px] bg-black relative z-10 text-white border-2 p-2 rounded-full transition-transform duration-300;
+  }
+  
+  .accordion-footer__arrow {
+    @apply w-[20px] h-[20px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+  
+  .accordion-footer__content {
+    @apply flex flex-col mt-[16px] gap-[10px] 2xl:gap-[20px] overflow-hidden max-h-0 transition-all duration-300 ease-in-out;
+  }
+  .accordion-footer__content {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .accordion-footer__content.open {
+    @apply translate-y-0;
+    max-height: 500px; 
+  }
+  accordion-footer__content:not(.open) {
+    @apply -translate-y-full;
+  }
+  
+.accordion-footer__link {
+    @apply text-[18px] text-[#d9d9d9] bg-black pr-[20px] relative z-10 active:text-white transition-colors duration-200;
+  }
+  
+  .rotate {
+    @apply rotate-180;
+  }

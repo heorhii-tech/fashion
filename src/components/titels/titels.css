@@ -1,0 +1,7 @@
+.new-arrivals-title{
+    @apply max-w-[250px] font-black text-[32px] xl:text-[40px] 2xl:text-[48px];
+    @apply lg:max-w-full text-[32px] xl:text-[40px] 2xl:text-[48px] relative;
+}
+.new-arrivals-circle{
+    @apply w-[114px] h-[32px]  absolute right-[-3%] top-[45%] z-[-1];
+}

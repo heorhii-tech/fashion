@@ -9,9 +9,9 @@ export const BrandsSlider = ({ config }: BrandsSliderProps) => {
   const { brandImages } = config;
 
   return (
-    <div className="brands-slider">
+    <div className="brands-slider ">
       <div className="brands-slider__container">
-        {/* Дублируем список изображений для бесшовного эффекта */}
+        
         {[...brandImages, ...brandImages].map((image, index) => (
           <img key={index} className="brands-slider__image" src={image} alt="" />
         ))}
