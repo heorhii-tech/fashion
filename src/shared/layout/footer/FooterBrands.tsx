@@ -15,7 +15,7 @@ const FooterBrands:React.FC<FooterProps> = ({config}) => {
       <ul className="footer__social-list">
         {config.socialLinks.map((item: string, index: number) => (
           <li className="footer__social-item" key={index}>
-            <a href={item}>
+            <a href={'/'}>
               <img src={item} alt={item} />
             </a>
           </li>

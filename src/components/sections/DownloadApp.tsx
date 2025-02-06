@@ -74,7 +74,7 @@ export const DownloadApp: React.FC<DownloadAppProps> = ({ config }) => {
           <img
             src={config.mobileAppImage}
             alt=""
-            className="z-10 rounded-[34px] h-auto w-[50vw] md:w-[180px] lg:w-[200px] xl:w-[240px] 2xl:w-[320px] outline outline-[#C2C8DA] outline-[10px] md:outline-[15px] lg:outline-[18px] 2xl:outline-[22px] drop-shadow-app hover:outline-[#e3d7a7] transition-all"
+            className="z-10 rounded-[34px] h-auto w-[50vw] md:w-[180px] lg:w-[200px] xl:w-[240px] xl:w-[286px] xl:h-[520px]  outline outline-[#C2C8DA] outline-[10px] md:outline-[15px] lg:outline-[18px] 2xl:outline-[22px] drop-shadow-app hover:outline-[#e3d7a7] transition-all"
           />
         </div>
       </div>

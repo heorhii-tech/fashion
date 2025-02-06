@@ -20,7 +20,7 @@ const BurgerButton: React.FC<ButtonProps> = ({ onClick, open }) => {
         onClick={onClick}
       /> */
       <svg
-        className={`lg:hidden bars ${open ? "active" : ""}`}
+        className={` bars ${open ? "active" : ""}`}
         viewBox="0 0 100 100"
         fill="none"
         id="navButton"

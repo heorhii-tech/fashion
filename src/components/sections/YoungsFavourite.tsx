@@ -20,7 +20,7 @@ export const YoungsFavourite: React.FC<YoungsFavouriteProps> = ({
         className="section-youngs-favourite__title"
         circleClassName="new-arrivals-circle"
       />
-      <div className="new-arrivals-cards">
+      <div className="new-arrivals-cards youngs-favourite-cards">
         {config.cards.map((card) => (
           <ProductCard
             title={card.title}

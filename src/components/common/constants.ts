@@ -10,10 +10,17 @@ import {
 } from "./types";
 import SectionHeaderImage from "../../../assests/images/section-header-image.webp";
 import starHeader from "../../../assests/icons/header-section-star.svg"
-import brandImage1 from "../../../assests/images/Rectangle 36.png";
+import brandImage1 from "../../../assests/images/sponsor_a.png";
+import brandImage2 from "../../../assests/images/sponsor_b.png";
+import brandImage3 from "../../../assests/images/sponsor_c.png";
+import brandImage4 from "../../../assests/images/sponsor_d.png";
+import brandImage5 from "../../../assests/images/sponsor_e.png";
+import brandImage6 from "../../../assests/images/sponsor_f.png";
+
 import newArrivalImage1 from "../../../assests/images/new-arrivals-img-1.png";
 import newArrivalImage2 from "../../../assests/images/new-arrivals-img-2.png";
 import newArrivalImage3 from "../../../assests/images/new-arrivals-img-3.png";
+
 import newArrivalsArrovImage from "../../../assests/icons/new-arrivals-arrow.svg";
 import PayDayImg from "../../../assests/images/pay-day-image.webp";
 import starPayDayIcon from "../../../assests/icons/star-payday-icon.svg";
@@ -34,10 +41,12 @@ export const SECTION_HEADER_CONFIG: SectionHeaderConfig = {
 export const BrandsSliderConfig = {
   brandImages: [
     brandImage1,
-    brandImage1,
-    brandImage1,
-    brandImage1,
-    brandImage1,
+    brandImage2,
+    brandImage3,
+    brandImage4,
+    brandImage5,
+    brandImage6
+  
   ],
 };
 export const NEW_ARRIVALS_CARDS_INFO: NewArrivalCardsInfo[] = [

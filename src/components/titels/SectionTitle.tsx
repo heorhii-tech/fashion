@@ -9,7 +9,7 @@ export const SectionTitle:React.FC<SectionTitleProps> = ({title,className,circle
     return (
         
         <div className={className}>
-            <h2 className="font-black text-[32px] xl:text-[40px] 2xl:text-[48px]"> <span className="relative">
+            <h2 className="font-black text-[32px] 2xl:text-[34px]"> <span className="relative">
                 {title}
                 <img className={circleClassName} src={circleImg} alt="" />
             </span></h2>

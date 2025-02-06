@@ -1,38 +1,27 @@
 .brands-slider {
-  @apply bg-primary-yellow py-[40px] px-[24px] w-full overflow-hidden flex items-center ;
-  @apply md:mt-[60px];
+  @apply bg-primary-yellow py-[40px] px-[24px] w-full overflow-hidden flex items-center mt-[60px];
 }
 
 .brands-slider__container {
   @apply bg-primary-yellow h-full flex items-center shrink-0 gap-[5px] md:gap-[50px] 2xl:gap-[100px] animate-[slideSmall_15s_linear_infinite] md:animate-[slideMedium_15s_linear_infinite] 2xl:animate-[slideLarge_15s_linear_infinite];
-  @apply xl:max-w-[1000px] 2xl:max-w-[1200px];
 }
-
 @keyframes slideLarge {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-50% ));
-  }
+  from {transform: translateX(0);}
+  to {transform: translateX(calc(-50% - 50px));}
 }
 @keyframes slideMedium {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-50% ));
-  }
+  from {transform: translateX(0);}
+  to {transform: translateX(calc(-50% - 25px));}
 }
 @keyframes slideSmall {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-50%));
-  }
+  from {transform: translateX(0);}
+  to {transform: translateX(calc(-50% - 2.5px));}
 }
 
 .brands-slider__image {
   @apply md:w-auto lg:w-[100px] xl:w-auto;
+}
+.slider-container {
+  @apply lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] 2xl:px-[30px];
+  @apply mt-[60px] mx-auto py-[30px] lg:py-0 lg:min-h-[185px] flex items-center relative overflow-hidden  before:absolute before:inset-y-0 before:left-0 before:w-[20px] before:z-10 before:bg-gradient-to-l after:absolute after:inset-y-0 after:right-0 after:w-[20px] after:bg-gradient-to-r from-transparent to-primary-yellow;
 }

@@ -1,5 +1,5 @@
 .new-arrivals-title{
-    @apply max-w-[250px] font-black text-[32px] xl:text-[40px] 2xl:text-[48px];
+    @apply max-w-[250px] font-black text-[32px] 2xl:text-[34px];
     @apply lg:max-w-full text-[32px] xl:text-[40px] 2xl:text-[48px] relative;
 }
 .new-arrivals-circle{
